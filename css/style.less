@@ -1,43 +1,96 @@
 @import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
-body{
-    font-family: 'Monoton', cursive;
-    background: #ff8000;
-    color: #fff;
-    font-size: 100%;
-    text-align: center;
-    .main{
-        .logo{
-            img{
-                width: 80%;
-                margin: 5% auto;
+
+@desktop:   ~"only screen and (min-width: 1024px) and (max-width: 1920px)";
+@phone:    ~"only screen and (min-width: 320px) and (max-width: 1024px)";
+
+@media @desktop {
+    body{
+        font-family: 'Monoton', cursive;
+        background: #ff8000;
+        color: #fff;
+        font-size: 100%;
+        text-align: center;
+        .main{
+            .logo{
+                img{
+                    width: 20%;
+                    margin: 5% auto;
+                }
             }
-        }
-        .line{
-            display: flex;
-            justify-content: center;
-            .link{
-                text-align: center;
-
-                a{
-                    text-decoration: none;
-                    color: #fff;
-                    display: flex;
-                    flex-direction: column;
-
-                    img{
-                        width: 80%;
-                        margin: 0 auto;
-                    }
-
-                    label{
-                        font-size: 2rem;
-
-                        small{
-                            margin: 0 .5rem
+            .line{
+                display: flex;
+                justify-content: center;
+                .link{
+                    text-align: center;
+    
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                        display: flex;
+                        flex-direction: column;
+    
+                        img{
+                            width: 80%;
+                            margin: 0 auto;
+                        }
+    
+                        label{
+                            font-size: 2rem;
+    
+                            small{
+                                margin: 0 .5rem
+                            }
                         }
                     }
                 }
             }
         }
     }
+    
+}
+
+@media @phone {
+    body{
+        font-family: 'Monoton', cursive;
+        background: #ff8000;
+        color: #fff;
+        font-size: 100%;
+        text-align: center;
+        .main{
+            .logo{
+                img{
+                    width: 80%;
+                    margin: 5% auto;
+                }
+            }
+            .line{
+                display: flex;
+                justify-content: center;
+                .link{
+                    text-align: center;
+    
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                        display: flex;
+                        flex-direction: column;
+    
+                        img{
+                            width: 80%;
+                            margin: 0 auto;
+                        }
+    
+                        label{
+                            font-size: 2rem;
+    
+                            small{
+                                margin: 0 .5rem
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
 }

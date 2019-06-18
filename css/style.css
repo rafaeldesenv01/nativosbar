@@ -1,35 +1,73 @@
 @import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
-body {
-  font-family: 'Monoton', cursive;
-  background: #ff8000;
-  color: #fff;
-  font-size: 100%;
-  text-align: center;
+@media only screen and (min-width: 1024px) and (max-width: 1920px) {
+  body {
+    font-family: 'Monoton', cursive;
+    background: #ff8000;
+    color: #fff;
+    font-size: 100%;
+    text-align: center;
+  }
+  body .main .logo img {
+    width: 20%;
+    margin: 5% auto;
+  }
+  body .main .line {
+    display: flex;
+    justify-content: center;
+  }
+  body .main .line .link {
+    text-align: center;
+  }
+  body .main .line .link a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  body .main .line .link a img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  body .main .line .link a label {
+    font-size: 2rem;
+  }
+  body .main .line .link a label small {
+    margin: 0 0.5rem;
+  }
 }
-body .main .logo img {
-  width: 80%;
-  margin: 5% auto;
-}
-body .main .line {
-  display: flex;
-  justify-content: center;
-}
-body .main .line .link {
-  text-align: center;
-}
-body .main .line .link a {
-  text-decoration: none;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-}
-body .main .line .link a img {
-  width: 80%;
-  margin: 0 auto;
-}
-body .main .line .link a label {
-  font-size: 2rem;
-}
-body .main .line .link a label small {
-  margin: 0 0.5rem;
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  body {
+    font-family: 'Monoton', cursive;
+    background: #ff8000;
+    color: #fff;
+    font-size: 100%;
+    text-align: center;
+  }
+  body .main .logo img {
+    width: 80%;
+    margin: 5% auto;
+  }
+  body .main .line {
+    display: flex;
+    justify-content: center;
+  }
+  body .main .line .link {
+    text-align: center;
+  }
+  body .main .line .link a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  body .main .line .link a img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  body .main .line .link a label {
+    font-size: 2rem;
+  }
+  body .main .line .link a label small {
+    margin: 0 0.5rem;
+  }
 }
